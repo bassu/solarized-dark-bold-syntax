@@ -1,0 +1,62 @@
+.source.css {
+  .entity.name {
+    color: @blue;
+  }
+  .punctuation.section {
+    color: @base0;
+  }
+  .punctuation.separator {
+    color: @syntax-text-color;
+  }
+  .punctuation.terminator {
+    color: @syntax-text-color;
+  }
+  .punctuation.definition {
+    &.entity {
+      color: @base0;
+    }
+    &.constant {
+      color: @syntax-text-color;
+    }
+  }
+  .brace {
+    color: @blue;
+  }
+  .variable {
+    color: @blue;
+  }
+  .attribute-name.class {
+    color: @blue;
+    font-weight: bold;
+  }
+  .property-name {
+    color: @base1;
+  }
+  .property-value {
+    color: @cyan;
+  }
+  .unit {
+    color: @cyan;
+  }
+  .support.function {
+    color: @blue;
+  }
+  .rgb-value {
+    color: @cyan;
+  }
+  .id {
+    color: @yellow;
+    font-weight: bold;
+    //font-style: italic;
+  }
+  .pseudo-element {
+    color: @base0;
+    font-weight: bold;
+  }
+  .pseudo-class {
+
+    &.attribute-name {
+      .pseudo-element;
+    }
+  }
+}
