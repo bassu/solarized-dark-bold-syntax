@@ -1,10 +1,24 @@
 .source.js {
   .constant {
     color: @green;
+    &.language {
+      color: @base0;
+      font-weight: bold;
+    }
   }
 
   .comma {
     color: @syntax-text-color;
+  }
+
+  .storage {
+    &.modifier {
+      color: @green;
+      font-weight: bold;
+    }
+    &.type.function {
+      font-weight: bold;
+    }
   }
 
   .support.class {
@@ -15,18 +29,19 @@
     color: @yellow;
   }
   .entity.name {
-    color: @syntax-text-color;
+    color: @blue;
   }
 
   .meta.brace {
-    color: @syntax-text-color;
+    color: @base0;
   }
 
   .keyword {
     color: @syntax-text-color;
   }
   .keyword.operator.new {
-    color: @green;
+    color: @base0;
+    font-weight: bold;
   }
   .keyword.control {
     color: @green;
@@ -36,7 +51,7 @@
   }
 
   .variable {
-    color: @blue;
+    color: @yellow;
   }
   .variable.parameter {
     color: @syntax-text-color;
@@ -47,7 +62,7 @@
   }
 
   .support.function {
-    color: @syntax-text-color;
+    color: @blue;
   }
   .support.constant {
     color: @syntax-text-color;
@@ -64,10 +79,5 @@
   .meta.delimiter.method.period {
     color: @syntax-text-color;
   }
-  .meta.brace.square {
-    color: @blue;
-  }
-  .meta.brace.curly {
-    color: @blue;
-  }
+
 }
